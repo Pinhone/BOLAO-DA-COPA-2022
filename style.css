@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*********************************/ 
+.t1::after {content: "BRASIL 1";}
+.t2::after {content: "BRASIL 2";}
+.t3::after {content: "BRASIL 3";}
+.t4::after {content: "BRASIL 4";}
+.t5::after {content: "BRASIL 5";}
+.t6::after {content: "BRASIL 6";}
+.t7::after {content: "BRASIL 7";}
+.t8::after {content: "BRASIL 8";}
+.t9::after {content: "BRASIL 9";}
+.t10::after {content: "BRASIL 10";}
+.t11::after {content: "BRASIL 11";}
+.t12::after {content: "BRASIL 12";}
+.t13::after {content: "BRASIL 13";}
+.t14::after {content: "BRASIL 14";}
+.t15::after {content: "BRASIL 15";}
+.t16::after {content: "BRASIL 16";}
+.t17::after {content: "BRASIL 17";}
+.t18::after {content: "BRASIL 18";}
+.t19::after {content: "BRASIL 19";}
+.t20::after {content: "BRASIL 20";}
+.t21::after {content: "BRASIL 21";}
+.t22::after {content: "BRASIL 22";}
+.t23::after {content: "BRASIL 23";}
+.t24::after {content: "BRASIL 24";}
+.t25::after {content: "BRASIL 25";}
+.t26::after {content: "BRASIL 26";}
+.t27::after {content: "BRASIL 27";}
+.t28::after {content: "BRASIL 28";}
+.t29::after {content: "BRASIL 29";}
+.t30::after {content: "BRASIL 30";}
+.t31::after {content: "BRASIL 31";}
+.t32::after {content: "BRASIL 32";}
+
+#titulo {
+    font-family: sans-serif;
+    color: #380B61;
+    text-align: center;
+} 
+#subtitulo {
+    font-family: sans-serif;
+    color: #380B61;
+    text-align: center;
+} 
+fieldset {
+    border: 0;
+    text-align: center;
+}
+body{
+    background-color: #F0F8FF;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    margin-left: 0%;
+    margin-top: 2%;
+    justify-content: center;
+}
+.dados:before, .dados:after {
+    display: table;
+}
+.dados:after {
+    clear: both;
+}
+.campo {
+    margin-bottom: 1em;
+}
+.campo label {
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+}
+fieldset.dados .campo {
+    float: left;
+    margin-right: 0.5em;
+}
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"] {
+    padding: 0.4em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display:flex;
+}
+.campo input:focus,td select:focus, td input:focus {
+    background: #E0E0F8;
+}
+input, select, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    border-radius: 5px;
+}
+/************************************************/
+table{
+    min-width: 300px;
+    max-width: 800px;
+    width: 100%;
+    position:relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%)
+}
+/*
+tr{
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
+}
+th{
+    border: 1px solid black;
+}*/
+.esquerda {
+    text-align: right;
+    width: 30%;
+}
+.direita {
+    text-align: left;
+    width: 30%;
+}
+.centro {
+    text-align: center;
+    width: 6%;
+}
+.placar {
+    text-align: center;
+    width: 17%;
+}
+
+td:before, td:after {
+    display: table;
+}
+td:after {
+    clear: both;
+}
+td label {
+    margin-top: 0.3em;
+    margin-bottom: 0.2em;
+    color: #59429d;
+    /*display: block;*/
+}
+td input[type="number"]{
+    padding: 0.2em;
+    width:50px;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+td select {
+    padding: 0.2em;
+    width:auto;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+.grupo{
+    padding: 1em;
+}
+.campeaocentro{
+    text-align: center;  
+    font-size: 2.5em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position:relative;
+    margin-top: 8%;
+    
+}
+.campeao select {
+    font-size: 1.5em;
+    padding: 0.2em 0.6em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position:relative;
+    left: 50%;
+    margin-top: 5%;
+    transform: translate(-50%, -50%)
+}
+tr select option {
+    padding-right: 1em;
+}
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position:relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+.botao, select{
+    cursor: pointer;   
+}
+
+
+/*.jogo{
+    display: flex;
+    flex-flow: row wrap;
+    padding:10px;
+}
+
+.direita1{text-align: right;}
+.esquerda1{text-align: left;}
+.centro1{text-align: center;}
+
+
+
+  
+.coluna-30 {width: 30%;}   
+.coluna-17 {width: 17%;}  
+.coluna-06 {width: 6%; }*/
