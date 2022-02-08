@@ -59,10 +59,10 @@ body{
     margin-top: 2%;
     justify-content: center;
 }
-.dados:before, .dados:after {
+.dados::before, .dados::after, td::before, td::after, .campeaocentro::before, .campeaocentro::after{
     display: table;
 }
-.dados:after {
+.dados::after, td::after, .campeaocentro::after {
     clear: both;
 }
 .campo {
@@ -83,9 +83,7 @@ fieldset.dados .campo {
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display:flex;
 }
-.campo input:focus,td select:focus, td input:focus {
-    background: #E0E0F8;
-}
+
 input, select, button {
     font-family: sans-serif;
     font-size: 1em;
@@ -128,13 +126,6 @@ th{
     text-align: center;
     width: 17%;
 }
-
-td:before, td:after {
-    display: table;
-}
-td:after {
-    clear: both;
-}
 td label {
     margin-top: 0.3em;
     margin-bottom: 0.2em;
@@ -149,9 +140,12 @@ td input[type="number"]{
 }
 td select {
     padding: 0.2em;
-    width:auto;
+    width:90%;
     border: 1px solid #59429d;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+tr select option {
+    padding-right: 1em;
 }
 .grupo{
     padding: 1em;
@@ -175,8 +169,8 @@ td select {
     margin-top: 1em;
     transform: translate(-50%, -50%)
 }
-tr select option {
-    padding-right: 1em;
+.campo input:focus,td select:focus, td input:focus, .campeao select:focus{
+    background: #E0E0F8;
 }
 .botao {
     font-size: 1.2em;
@@ -200,21 +194,3 @@ tr select option {
 .botao, select{
     cursor: pointer;   
 }
-
-
-/*.jogo{
-    display: flex;
-    flex-flow: row wrap;
-    padding:10px;
-}
-
-.direita1{text-align: right;}
-.esquerda1{text-align: left;}
-.centro1{text-align: center;}
-
-
-
-  
-.coluna-30 {width: 30%;}   
-.coluna-17 {width: 17%;}  
-.coluna-06 {width: 6%; }*/
